@@ -9,10 +9,8 @@ public final class Main extends JavaPlugin {
         items.init();
         this.getCommand("givegrapplinghook").setExecutor(new commands());
         this.getCommand("givebloodscyth").setExecutor(new commands());
-        this.getCommand("giveflower").setExecutor(new commands());
         this.getCommand("givepumkinaxe").setExecutor(new commands());
         this.getCommand("givemelonecapitor").setExecutor(new commands());
-        this.getCommand("givewot").setExecutor(new commands());
         this.getServer().getPluginManager().registerEvents(new grappling_hook(),this);
         this.getServer().getPluginManager().registerEvents(new join(),this);
         this.getServer().getPluginManager().registerEvents(new blood_scyth(this), this);

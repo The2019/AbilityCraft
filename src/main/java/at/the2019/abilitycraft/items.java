@@ -15,11 +15,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 public class items {
     public static ItemStack GrapplingHook;
     public static ItemStack BloodScyth;
-    public static ItemStack FlowerOfTruth;
-    public static ItemStack SugarCaneHoe;
     public static ItemStack PumkinAxe;
     public static ItemStack MeloneCapitor;
-    public static ItemStack WandOfTeleportation;
 
     public static void init(){
         CreateGrapplingHook();
@@ -27,7 +24,6 @@ public class items {
         CreateFlowerOfTruth();
         CreatePumkinAxe();
         CreateMeloneCapitor();
-        CreateWandOfTeleportation();
     }
 
 
@@ -113,28 +109,6 @@ public class items {
         item.setItemMeta(meta);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
         MeloneCapitor = item;
-    }
-    private static void CreateWandOfTeleportation(){
-        ItemStack item = new ItemStack(Material.DIAMOND_SHOVEL);
-        ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§6Wand of Teleportation");
-        List <String> lore = new ArrayList<>();
-        lore.add("");
-        lore.add("§eItem Ability: §cInsta Teleport");
-        lore.add("§7Teleports 25 Blocks in the directione that you looking");
-        lore.add("");
-        lore.add("§7LEGENDARY");
-        meta.setLore(lore);
-        meta.setUnbreakable(true);
-        meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-        item.setItemMeta(meta);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 1);
-        WandOfTeleportation = item;
-
-
-        ShapedRecipe rezept = new ShapedRecipe(NamespacedKey.minecraft("wot"), item);
-        rezept.shape("","","");
     }
 }
 

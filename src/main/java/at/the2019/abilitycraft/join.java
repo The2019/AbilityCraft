@@ -10,8 +10,7 @@ public class join implements Listener {
     @EventHandler
     public void onjoin(PlayerJoinEvent event){
         Player player = event.getPlayer();
-        player.sendMessage("§cWillkommen zurück auf Ability Craft");
-        player.sendMessage("§cViel Spaß!");
+        player.sendMessage("§cWillkommen zurück, auf Ability Craft!");
 
     }
 }
