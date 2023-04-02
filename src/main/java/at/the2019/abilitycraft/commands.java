@@ -21,17 +21,11 @@ public class commands implements CommandExecutor {
             if(cmd.getName().equalsIgnoreCase("givebloodscyth")){
                 player.getInventory().addItem(items.BloodScyth);
             }
-            if(cmd.getName().equalsIgnoreCase("giveflower")){
-                player.getInventory().addItem(items.BloodScyth);
-            }
             if(cmd.getName().equalsIgnoreCase("givepumkinaxe")){
                 player.getInventory().addItem(items.PumkinAxe);
             }
             if(cmd.getName().equalsIgnoreCase("givemelonecapitor")){
                 player.getInventory().addItem(items.MeloneCapitor);
-            }
-            if(cmd.getName().equalsIgnoreCase("givewot")){
-                player.getInventory().addItem(items.WandOfTeleportation);
             }
         }
         else{
